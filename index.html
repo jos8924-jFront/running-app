@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Running app</title>
+</head>
+<body>
+    <main class="flex column border-red">
+        <div class="tittle-container border-white flex align-center content-center">
+            <h2>Running App</h2>
+        </div>
+        <div class="content-container border-yellow flex row">
+            <div class="leftpanel-container border-violet flex column align-center">
+                <div class="input-container border-orange flex column content-center">
+                    <label for="file">Subir archivo:</label>
+                    <input type="file" class="file" id="file" accept=".tcx" placeholder="Subir archivo en formato .tcx">
+                    <div class="message-container flex column align-center">
+                        <p class="succes-message" id="succes-message">Sucess</p>
+                        <p class="fail-message" id="fail-message">Fail</p>
+                    </div>
+                </div>
+                <div class="adv-container border-pink">
+                    advanced
+                </div>
+            </div>
+            <div class="rightpanel-container border-blue flex">
+                <div class="content-container flex">
+                    <div class="preview-container flex align-center content-center" id="preview-container">
+                        <h2>Preview</h2>
+                        
+                    </div>
+                    <div class="info-container none column" id="info-container">
+                        <p>Fecha: <span id="fecha"></span></p>
+                        <p>Distancia: <span id="distancia"></span></p>
+                        <p>Duración: <span id="duracion"></span></p>
+                        <p>Pace: <span id="pace"></span></p>
+                        <p>Cadencia: <span id="cadencia"></span></p>
+                        <p>HR Promedio: <span id="avgHR"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Clases rápidas: .hidden, .text-center, .mt-2
+ */
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.border-red{
+    border: 1px red solid;
+}
+
+.border-orange{
+    border: 1px orange dashed;
+}
+
+.border-pink{
+    border: 1px pink dashed;
+}
+
+.border-white{
+    border: 1px white dashed;
+}
+
+.border-yellow{
+    border: 1px yellow dashed;
+}
+
+.border-violet{
+    border: 1px violet dashed;
+}
+
+.border-blue{
+    border: 1px blue dashed;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.content-center{
+    justify-content: center;
+}
+
+.none{
+    display: none;
+}

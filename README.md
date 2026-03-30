@@ -1,0 +1,1 @@
+# Funcionalidad basica, interpreta un .tcx y muestra la info general.

@@ -1,0 +1,54 @@
+/* Estructura general: grid, flex, contenedores
+ */
+
+.tittle-container{
+    flex: 1;
+}
+
+.content-container{
+    flex: 11;
+}
+
+.leftpanel-container{
+    flex: 4;
+}
+
+.rightpanel-container{
+    flex: 8;
+}
+
+.input-container{
+    flex: 2;
+    width: 80%;
+}
+
+.file{
+    margin: 0 auto;
+    padding: 10px 0;
+    flex: 1;
+}
+
+.message-container{
+    padding: 5px 0;
+    flex: 1;
+}
+
+.succes-message{
+    color: var(--sucess-color);
+    display: none;
+}
+
+.fail-message{
+    color: var(--fail-color);
+    display: none;
+}
+
+.adv-container{
+    flex: 9;
+    width: 90%;
+}
+
+.preview-container {
+  width: 100%;   
+  height: 100%;  
+}

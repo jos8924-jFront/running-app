@@ -29,7 +29,17 @@ export function calcularMetricas(dataJson) {
         : "N/A";
 
     // Fecha de la actividad (primer trackpoint)
-    const fechaActividad = inicio.toISOString().replace("T", " ").split(".")[0];
+    /* const fechaActividad = inicio.toISOString().replace("T", " ").split(".")[0]; */
+    const fechaActividad = inicio.toLocaleString("es-PE", {
+        timeZone: "America/Lima",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    });
+
 
 
 

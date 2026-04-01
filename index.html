@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <!-- html2canvas para descargar en png -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     <title>Running app</title>
 </head>
 <body>
@@ -26,18 +28,62 @@
                 </div>
             </div>
             <div class="rightpanel-container border-blue flex">
-                <div class="content-container flex">
+                <div class="content-container flex column">
                     <div class="preview-container flex align-center content-center" id="preview-container">
                         <h2>Preview</h2>
                         
                     </div>
-                    <div class="info-container none column" id="info-container">
-                        <p>Fecha: <span id="fecha"></span></p>
-                        <p>Distancia: <span id="distancia"></span></p>
-                        <p>Duración: <span id="duracion"></span></p>
-                        <p>Pace: <span id="pace"></span></p>
-                        <p>Cadencia: <span id="cadencia"></span></p>
-                        <p>HR Promedio: <span id="avgHR"></span></p>
+
+                    <!-- INFO GENERAL -->
+
+                    <div class="info-container none column border-violet" id="info-container">
+                    
+                        <div class="fecha-container border-pink flex align-center content-end">
+                            <h3 id="fecha"></h3>
+                        </div>
+
+                        <div class="distancia-container flex column align-center content-center border-pink">
+                            <h2>Distancia</h2>
+                            <h1 id="distancia"></h1>
+                        </div>
+
+                        <div class="pace-container flex column align-center content-center border-pink">
+                            <h2>Pace</h2>
+                            <h1 id="pace"></h1>
+                        </div>
+
+                        <div class="duracion-container flex column align-center content-center border-pink">
+                            <h2>Duracion</h2>
+                            <h1 id="duracion"></h1>
+                        </div>
+
+                        <div class="otros-container flex row align-center content-center border-pink">
+                            <div class="cadence-container flex align-center content-center border-yellow">
+                                
+                                <img class="svg-img" src="assets/images/svg/cadence.svg" alt="cadence" crossorigin="anonymous">
+                                <h2 id="cadencia"></h2>
+                            </div>
+                            <div class="fc-container flex row align-center content-center border-violet">
+                                <img class="svg-img" src="assets/images/png/hearth.png" alt="hearth" >
+                                <h2 id="avgHR"></h2>
+                            </div>
+                            
+                        </div>
+
+                        <div class="footer-container flex column align-center content-center border-pink">
+                            <div class="logo-container">
+                                <img class="svg-logo" src="assets/images/svg/pumba.svg" alt="pumba">
+                            </div>
+                            
+                            <h2>Pumba</h2>
+                        </div>
+
+                    </div>
+
+                    <!-- Descarga -->
+                    <div class="download-container flex align-center content-center">
+                        <button id="download">Download</button>
+                        <button id="reset">Reset</button>
                     </div>
                 </div>
             </div>

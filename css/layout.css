@@ -52,3 +52,75 @@
   width: 100%;   
   height: 100%;  
 }
+
+/* INFO CONTAINER */
+
+.info-container{
+    height: 100%;
+    width: 100%;
+}
+
+.fecha-container{
+    flex: 1;
+    padding-right: 3rem;
+}
+
+.distancia-container{
+    flex: 2;
+}
+
+.pace-container{
+    flex: 2;
+}
+
+.duracion-container{
+    flex: 2;
+}
+
+.otros-container {
+    flex: 1;
+    gap: 2rem;
+    
+}
+
+.cadence-container {
+    flex: 1;
+    max-height: 3rem;
+    height: 100%;
+    gap: 1rem;
+}
+
+.svg-img {
+    width: 3rem;       /* ocupa todo el ancho disponible */
+    height: 3rem;      /* mantiene proporción */
+    display: block;    /* elimina espacios fantasma de inline-block */
+}
+
+.fc-container{
+    flex: 1;
+    max-height: 3rem;
+    height: 100%;
+    gap: 1rem;
+}
+
+.logo-container {
+    /* flex: 1; */
+    max-height: 10rem;
+    height: 100%;
+    gap: 1rem;
+}
+
+.svg-logo {
+    width: 10rem;       /* ocupa todo el ancho disponible */
+    height: 10rem;      /* mantiene proporción */
+    display: block;    /* elimina espacios fantasma de inline-block */
+}
+
+
+
+
+.footer-container{
+    flex: 4;
+    gap: 1rem;
+    padding: 1rem 0;
+}

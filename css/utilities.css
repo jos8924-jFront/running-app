@@ -53,6 +53,15 @@
     justify-content: center;
 }
 
+.content-end{
+    justify-content: end;
+}
+
+.text-align-end{
+    text-align: end;
+}
+
 .none{
     display: none;
 }
+

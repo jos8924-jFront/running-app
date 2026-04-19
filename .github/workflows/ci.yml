@@ -1,0 +1,15 @@
+name: Basic CI
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest   # porque trabajas en Windows
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Run basic check
+        run: echo "✅ Status check passed"

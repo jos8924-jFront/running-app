@@ -8,5 +8,5 @@ export function mostrarMetricas(data) {
   document.getElementById("duracion").textContent = m.duracion;
   document.getElementById("pace").textContent = m.pace;
   document.getElementById("cadencia").textContent = m.cadencia;
-  document.getElementById("avgHR").textContent = m.avgHR;
+  document.getElementById("avgHR").textContent = m.avgHR + " bpm";
 }

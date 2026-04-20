@@ -45,6 +45,10 @@
     text-align: center;
 }
 
+.text-end{
+    text-align: end;
+}
+
 .align-center{
     align-items: center;
 }
@@ -65,3 +69,23 @@
     display: none;
 }
 
+.gap-1{
+    gap: 1rem;
+}
+
+.gap-2{
+    gap: 2rem;
+}
+
+
+.grid{
+    display: grid;
+}
+
+.grid-1fr-1fr{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-span-2{
+    grid-column: span 2;
+}

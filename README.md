@@ -34,5 +34,7 @@
 - git push origin feature-nueva-funcionalidad
 
 # Fusionar en main
-- git checkout main
-- git pull origin main
+- git checkout main # cambiar de rama
+- git pull origin main # traer los ultimos cambios al main
+- git merge descargar-png
+- git push origin main

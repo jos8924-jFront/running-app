@@ -24,7 +24,58 @@
                     </div>
                 </div>
                 <div class="adv-container border-pink">
-                    advanced
+                    <div class="flex column gap-1">
+                        <h2>Selecciona que realizaras</h2>
+                        <div class="flex content-center gap-2">
+                            <label for="editar-reporte">Editar
+                                <input type="radio" id="editar-reporte" value="editar" name="seleccion" data-target="editar-contenedor">
+                            </label>
+                            <label for="crear-reporte">Crear
+                                <input type="radio" id="crear-reporte" value="crear" name="seleccion" data-target="crear-contenedor">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex column gap-2 editar-contenedor" id="editar-contenedor">
+                        <h2>Edicion de secciones:</h2>
+                        <div class="flex column gap-1">
+                            <label for="edit-tittle">Colocar titulo: 
+                                <input type="text" id="edit-tittle">
+                            </label>
+                            <label for="edit-cadencia">Colocar cadencia:
+                                <input type="number" id="edit-cadencia">
+                            </label>
+                        </div>
+                        <div class="grid grid-1fr-1fr gap-1">
+                            <h3 class="grid-span-2">Ocultar secciones:</h3>
+                            <label for="hidden-tittle"> Titulo
+                                <input type="checkbox" id="hidden-tittle">
+                            </label>
+                            <label for="hidden-date"> Fecha
+                                <input type="checkbox" id="hidden-date">
+                            </label>
+                            <label for="hidden-distance"> Distancia
+                                <input type="checkbox" id="hidden-distance">
+                            </label>
+                            <label for="hidden-pace"> Pace
+                                <input type="checkbox" id="hidden-pace">
+                            </label>
+                            <label for="hidden-duration"> Duracion
+                                <input type="checkbox" id="hidden-duration">
+                            </label>
+                            <label for="hidden-cadence"> Cadencia
+                                <input type="checkbox" id="hidden-cadence">
+                            </label>
+                            <label for="hidden-bpm"> Frecuencia Cardiaca
+                                <input type="checkbox" id="hidden-bpm">
+                            </label>
+                            <label for="hidden-logo"> Logo
+                                <input type="checkbox" id="hidden-logo">
+                            </label>
+                        </div>
+                    </div>
+                    <div id="crear-contenedor">
+
+                    </div>
                 </div>
             </div>
             <div class="rightpanel-container border-blue flex">
@@ -38,39 +89,43 @@
 
                     <div class="info-container none column border-violet" id="info-container">
                     
-                        <div class="fecha-container border-pink flex align-center content-end">
+                        <div class="flex fecha-container border-pink align-center content-end" id="date">
                             <h3 id="fecha"></h3>
                         </div>
 
-                        <div class="distancia-container flex column align-center content-center border-pink">
+                        <div class="flex align-center content-center" id="tittle">
+                            <h1 class="titulo" id="titulo"></h1>
+                        </div>
+
+                        <div class="distancia-container flex column align-center content-center border-pink" id="distance">
                             <h2>Distancia</h2>
                             <h1 id="distancia"></h1>
                         </div>
 
-                        <div class="pace-container flex column align-center content-center border-pink">
+                        <div class="pace-container flex column align-center content-center border-pink" id="ritmo">
                             <h2>Pace</h2>
                             <h1 id="pace"></h1>
                         </div>
 
-                        <div class="duracion-container flex column align-center content-center border-pink">
+                        <div class="duracion-container flex column align-center content-center border-pink" id="duration">
                             <h2>Duracion</h2>
                             <h1 id="duracion"></h1>
                         </div>
 
                         <div class="otros-container flex row align-center content-center border-pink">
-                            <div class="cadence-container flex align-center content-center border-yellow">
+                            <div class="cadence-container flex align-center content-center border-yellow" id="cadence">
                                 
                                 <img class="svg-img" src="assets/images/svg/cadence.svg" alt="cadence" crossorigin="anonymous">
                                 <h2 id="cadencia"></h2>
                             </div>
-                            <div class="fc-container flex row align-center content-center border-violet">
+                            <div class="fc-container flex row align-center content-center border-violet" id="bpm">
                                 <img class="svg-img" src="assets/images/png/hearth.png" alt="hearth" >
                                 <h2 id="avgHR"></h2>
                             </div>
                             
                         </div>
 
-                        <div class="footer-container flex column align-center content-center border-pink">
+                        <div class="footer-container flex column align-center content-center border-pink" id="logo">
                             <div class="logo-container">
                                 <img class="svg-logo" src="assets/images/svg/pumba.svg" alt="pumba">
                             </div>

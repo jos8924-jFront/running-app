@@ -1,6 +1,7 @@
 
 import { fileUpload } from "./module/fileUpload.js";
 import { downloadPng } from "./module/downloadPng.js";
+import { sessionReport } from "./module/sessionReport.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -12,4 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     downloadBtn.addEventListener("click", () => {
         downloadPng();
     })
+
+    //Editar mensajes
+    sessionReport();
 });
